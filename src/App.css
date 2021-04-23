@@ -1,10 +1,55 @@
+nav {
+  width:100%;
+}
+
+li {
+  cursor: pointer;
+  display:inline;
+  margin: 1.5rem;
+}
+
+li:hover {
+  color:#9b273a;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+
+}
+
+.container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 65vw;
+  flex-wrap: wrap;
+  box-shadow: #282c34 0 0 50px;
+  margin:3rem;
+}
+
+.item {
+margin:1rem;
+width:150px;
+height:300px;
+}
+
+.name {
+  font-size: .75rem;
+  color:#9b273a;
+}
+
+.profile-img {
+  max-width:100px;
+  height:100px;
+  border-radius:50%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
