@@ -5,11 +5,13 @@ nav {
 li {
   cursor: pointer;
   display:inline;
-  margin: 1.5rem;
+  padding: .5rem 1.5rem;
+  border-radius: .2rem;
 }
 
-li:hover {
-  color:#9b273a;
+li:hover, li:active {
+  color: #fff;
+  background:#9b273a;
 }
 
 .App {
@@ -31,14 +33,28 @@ li:hover {
   align-items: center;
   width: 65vw;
   flex-wrap: wrap;
-  box-shadow: #282c34 0 0 50px;
+  box-shadow: #c7c7c7 0 0 50px;
+  border-radius: 2rem;
   margin:3rem;
+  padding:2rem 0;
 }
 
 .item {
 margin:1rem;
 width:150px;
 height:300px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.item:hover {
+  cursor: pointer;
+  box-shadow: #e2e2e2 0 0 10px;
+  border-radius: .5rem;
+  background: #353535;
+  color:#fff;
 }
 
 .name {

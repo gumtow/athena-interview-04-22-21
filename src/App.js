@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     async function fetchData(language) {
       const body = await fetch(
-        "https://api.github.com/search/repositories?q=stars:%3E10000&sort=stars"
+        "https://api.github.com/search/repositories?q=stars:%3E10000&sort=stars&per_page=15"
       );
       const json = await body.json();
       if (language !== "All") {
